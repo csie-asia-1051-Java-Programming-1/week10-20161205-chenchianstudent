@@ -82,11 +82,15 @@ for(int i=0;i<10;i++){
 	}
 	
 	
-	data[i]=ans;
+	data[i]=n;
 	sum=sum+ans;
 	sum1=sum1+sum;
 }
 float ans=sum1%11;
+System.out.print("您輸入的ISBN碼為：");
+for(int i=0;i<10;i++){
+System.out.print((char)data[i]+" ");	
+}
 
 if(ans==0){
 	System.out.println("合法");
